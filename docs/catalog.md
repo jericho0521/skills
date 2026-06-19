@@ -8,6 +8,10 @@ Use this file as the planning index for the repository. Keep installable skills 
 
 - `create-skill` - Create or improve skills in this repository.
 
+### Design
+
+- `extract-design-language` - Extract a frontend repository's design language into `DESIGN_LANGUAGE.md`.
+
 ## Backlog
 
 ### Engineering

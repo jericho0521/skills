@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Design Language"
+  short_description: "Document a frontend repo's reusable UI style."
+  default_prompt: "Use $extract-design-language to create DESIGN_LANGUAGE.md for this frontend repository."
