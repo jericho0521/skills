@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{Skill Title}}"
+  short_description: "{{25 to 64 character UI summary}}"
+  default_prompt: "Use ${{skill-name}} to handle this task."

@@ -1,0 +1,27 @@
+# Operating system files
+Thumbs.db
+.DS_Store
+
+# Editor and local agent state
+.vscode/
+.idea/
+.scratch/
+.codex/
+.agents/
+
+# Logs and temporary output
+*.log
+tmp/
+temp/
+
+# Node and Python caches
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Build output
+dist/
+build/

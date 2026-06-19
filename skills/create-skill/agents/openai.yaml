@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Skill"
+  short_description: "Create repository-ready Codex skills."
+  default_prompt: "Use $create-skill to add a new skill to this skills repository."

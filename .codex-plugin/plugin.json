@@ -1,0 +1,29 @@
+{
+  "name": "personal-skills",
+  "version": "0.1.0",
+  "description": "A local Codex plugin for reusable personal skills.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "skills",
+    "agents"
+  ],
+  "interface": {
+    "displayName": "Personal Skills",
+    "shortDescription": "A local library of reusable Codex skills.",
+    "longDescription": "Personal Skills is a local Codex plugin scaffold for creating, organizing, and validating reusable agent skills over time.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use $create-skill to add a new skill here.",
+      "Review this skills repo and suggest improvements."
+    ]
+  }
+}
