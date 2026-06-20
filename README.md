@@ -2,7 +2,7 @@
 
 A local Codex skills repository for the workflows, references, and helper tools you want to reuse later.
 
-This layout borrows the spirit of [mattpocock/skills](https://github.com/mattpocock/skills): small, composable skills with a clear catalog. The Codex-specific adjustment is that installable skills are kept flat under `skills/` so the plugin manifest can validate cleanly.
+This repository keeps skills small, composable, and organized with a clear catalog. Installable skills are kept flat under `skills/` so the plugin manifest can validate cleanly.
 
 ## Layout
 
@@ -37,21 +37,24 @@ This creates `skills/review-pr/` from the template and adds a `references/` fold
 After this repository is pushed to GitHub, install one of its skills into Codex with:
 
 ```powershell
-npx skills add <owner/repo> --skill <skill-name> --agent codex --global
+npx skills add jericho0521/skills --skill <skill-name> --agent codex --global
 ```
 
 This downloads the named skill from the GitHub repository and installs it into Codex's global skills directory. It is safe when you trust the repository contents, but it does run an npm package through `npx` and downloads files from GitHub.
 
-For example:
+This repository is published as `jericho0521/skills`. Restart Codex after installing so the new skill is loaded.
 
-```powershell
-npx skills add <owner/repo> --skill extract-design-language --agent codex --global
-```
+## How Skills Function
 
-This installs only `extract-design-language` for Codex. Restart Codex after installing so the new skill is loaded.
+Skills are reusable Codex workflows. Each skill lives in `skills/<skill-name>/` and has a `SKILL.md` file with trigger language and step-by-step instructions. Codex can use a skill when your prompt matches its description, or you can invoke it explicitly by mentioning `$skill-name`.
 
-## Current Skills
+This repository keeps skills flat under `skills/` so they can be exposed by the plugin manifest and installed one at a time.
 
-- `create-skill`: Add or improve skills in this repository.
-- `extract-design-language`: Extract a frontend repository's design language into `DESIGN_LANGUAGE.md`.
-- `review-fix-loop`: Loop Codex `/review` and fixes until no actionable findings remain.
+## Available Skills
+
+| Skill | What it does | Install command | Safety |
+| --- | --- | --- | --- |
+| `create-skill` | Creates or improves skills in this repository, including scaffolding, catalog updates, and validation guidance. | `npx skills add jericho0521/skills --skill create-skill --agent codex --global` | Safe when you trust the repository; it downloads this skill and installs it into Codex globally. |
+| `extract-design-language` | Extracts a frontend repository's design language into `DESIGN_LANGUAGE.md`, covering components, colors, typography, layout patterns, assets, and implementation notes. | `npx skills add jericho0521/skills --skill extract-design-language --agent codex --global` | Safe when you trust the repository; it downloads this skill and installs it into Codex globally. |
+| `review-fix-loop` | Runs an iterative Codex `/review` loop, fixes actionable findings, reruns review, and stops when no actionable findings remain. | `npx skills add jericho0521/skills --skill review-fix-loop --agent codex --global` | Safe when you trust the repository; it downloads this skill and installs it into Codex globally. |
+
