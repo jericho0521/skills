@@ -16,6 +16,7 @@ Use this file as the planning index for the repository. Keep installable skills 
 
 ### Engineering
 
+- `review-fix-loop` - Loop Codex `/review` and fixes until no actionable findings remain.
 - `tdd`
 - `debug-workflow`
 - `review-pr`

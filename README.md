@@ -32,6 +32,26 @@ You can also run:
 
 This creates `skills/review-pr/` from the template and adds a `references/` folder. It is safe when the skill name is new because it refuses to overwrite an existing skill.
 
+## Install with npx
+
+After this repository is pushed to GitHub, install one of its skills into Codex with:
+
+```powershell
+npx skills add <owner/repo> --skill <skill-name> --agent codex --global
+```
+
+This downloads the named skill from the GitHub repository and installs it into Codex's global skills directory. It is safe when you trust the repository contents, but it does run an npm package through `npx` and downloads files from GitHub.
+
+For example:
+
+```powershell
+npx skills add <owner/repo> --skill extract-design-language --agent codex --global
+```
+
+This installs only `extract-design-language` for Codex. Restart Codex after installing so the new skill is loaded.
+
 ## Current Skills
 
 - `create-skill`: Add or improve skills in this repository.
+- `extract-design-language`: Extract a frontend repository's design language into `DESIGN_LANGUAGE.md`.
+- `review-fix-loop`: Loop Codex `/review` and fixes until no actionable findings remain.
