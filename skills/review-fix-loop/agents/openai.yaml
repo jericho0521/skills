@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Fix Loop"
+  short_description: "Loop Codex review and fixes until clean."
+  default_prompt: "Use $review-fix-loop to run /review, fix actionable findings, and rerun until no actionable findings remain."
