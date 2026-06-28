@@ -1,0 +1,4 @@
+interface:
+  display_name: "Developer Experience Design"
+  short_description: "Design dense, precise frontend tools for developers and operators."
+  default_prompt: "Use $developer-experience-design to design or review this developer-facing frontend."

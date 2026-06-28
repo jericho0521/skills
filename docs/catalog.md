@@ -11,6 +11,7 @@ Use this file as the planning index for the repository. Keep installable skills 
 ### Design
 
 - `extract-design-language` - Extract a frontend repository's design language into `DESIGN_LANGUAGE.md`.
+- `developer-experience-design` - Design dense, precise frontend tools for developers and operators.
 
 ## Backlog
 
