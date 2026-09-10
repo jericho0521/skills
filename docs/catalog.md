@@ -13,6 +13,10 @@ Use this file as the planning index for the repository. Keep installable skills 
 - `extract-design-language` - Extract a frontend repository's design language into `DESIGN_LANGUAGE.md`.
 - `developer-experience-design` - Design dense, precise frontend tools for developers and operators.
 
+### Writing
+
+- `write-developer-docs` - Write, rewrite, and review developer documentation using Google's style guidance for clarity and technical precision.
+
 ## Backlog
 
 ### Engineering
@@ -31,7 +35,6 @@ Use this file as the planning index for the repository. Keep installable skills 
 
 ### Writing
 
-- `edit-docs`
 - `draft-release-notes`
 - `summarize-research`
 

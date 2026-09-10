@@ -54,6 +54,7 @@ This repository keeps skills flat under `skills/` so they can be exposed by the 
 
 | Skill | What it does | Install command | Safety |
 | --- | --- | --- | --- |
+| `write-developer-docs` | Writes, rewrites, and reviews developer documentation using Google's style guidance. | Use the installation command above with `--skill write-developer-docs`. | Downloads and installs the skill globally; use when you trust this repository. |
 | `create-skill` | Creates or improves skills in this repository, including scaffolding, catalog updates, and validation guidance. | `npx skills add jericho0521/skills --skill create-skill --agent codex --global` | Safe when you trust the repository; it downloads this skill and installs it into Codex globally. |
 | `extract-design-language` | Extracts a frontend repository's design language into `DESIGN_LANGUAGE.md`, covering components, colors, typography, layout patterns, assets, and implementation notes. | `npx skills add jericho0521/skills --skill extract-design-language --agent codex --global` | Safe when you trust the repository; it downloads this skill and installs it into Codex globally. |
 | `review-fix-loop` | Runs an iterative Codex `/review` loop, fixes actionable findings, reruns review, and stops when no actionable findings remain. | `npx skills add jericho0521/skills --skill review-fix-loop --agent codex --global` | Safe when you trust the repository; it downloads this skill and installs it into Codex globally. |
