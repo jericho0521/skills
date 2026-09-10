@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write developer docs"
+  short_description: "Write and improve docs with Google's style guidance"
+  default_prompt: "Use $write-developer-docs to write or improve this documentation for a mixed technical audience."
